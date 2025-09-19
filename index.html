@@ -19,34 +19,34 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
         }
 
         .hero {
             text-align: center;
-            padding: 40px 0 60px;
+            padding: 20px 0 30px;
         }
 
         .exclusive-badge {
             background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
-            padding: 8px 20px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 600;
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
         .main-headline {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
             line-height: 1.1;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #fff;
         }
 
@@ -60,24 +60,24 @@
 
         .sub-text {
             color: #888;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
+            font-size: 1rem;
+            margin-bottom: 25px;
             font-weight: 400;
         }
 
         .process-steps {
             background: #222;
             border-radius: 12px;
-            padding: 30px;
-            margin: 40px 0;
+            padding: 20px;
+            margin: 25px 0;
             text-align: left;
         }
 
         .step {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-size: 1rem;
             line-height: 1.4;
         }
 
@@ -86,7 +86,7 @@
         }
 
         .step-number {
-            background: #ff4757;
+            background: #667eea;
             color: white;
             width: 28px;
             height: 28px;
@@ -107,108 +107,33 @@
         }
 
         .phone-mockup {
-            max-width: 320px;
-            margin: 40px auto;
+            max-width: 260px;
+            margin: 25px auto;
             position: relative;
         }
 
-        .phone-frame {
-            background: #000;
+        .phone-image {
+            width: 100%;
+            height: auto;
             border-radius: 25px;
-            padding: 20px 15px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
-            position: relative;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
         }
 
-        .phone-screen {
-            background: linear-gradient(135deg, #2d3748, #4a5568);
-            border-radius: 20px;
-            padding: 25px 20px;
-            min-height: 580px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .phone-time {
-            text-align: center;
-            color: #fff;
-            font-size: 3rem;
-            font-weight: 300;
-            margin-bottom: 5px;
-        }
-
-        .phone-date {
-            text-align: center;
-            color: #a0a0a0;
-            font-size: 0.9rem;
-            margin-bottom: 40px;
-        }
-
-        .notification {
-            background: #ff4757;
-            border-radius: 12px;
-            padding: 15px;
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
-            animation: slideIn 1.5s ease-out;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(-20px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .notification-icon {
-            width: 12px;
-            height: 12px;
-            background: #fff;
-            border-radius: 50%;
-            margin-right: 12px;
-            flex-shrink: 0;
-        }
-
-        .notification-text {
-            color: #fff;
-            font-size: 0.85rem;
-            line-height: 1.3;
-            font-weight: 500;
-        }
-
-        .payid-logo-phone {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 60px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
-            font-weight: bold;
-            font-size: 0.8rem;
+        .phone-image:hover {
+            transform: scale(1.02);
         }
 
         .cta-button {
-            background: #ff4757;
+            background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
-            padding: 18px 60px;
-            font-size: 1.2rem;
+            padding: 15px 45px;
+            font-size: 1.1rem;
             font-weight: 700;
             text-decoration: none;
             border-radius: 8px;
             display: inline-block;
-            margin: 30px 0;
+            margin: 20px 0 10px;
             transition: all 0.3s ease;
             text-transform: none;
             border: none;
@@ -216,22 +141,22 @@
         }
 
         .cta-button:hover {
-            background: #ff3838;
+            background: linear-gradient(45deg, #5a67d8, #6b46c1);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.4);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
         }
 
         .cta-text {
             color: #888;
-            font-size: 1rem;
-            margin-top: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
         }
 
         .social-proof {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin: 40px 0;
+            gap: 30px;
+            margin: 25px 0;
             flex-wrap: wrap;
         }
 
@@ -240,7 +165,7 @@
         }
 
         .proof-icon {
-            color: #ff4757;
+            color: #667eea;
             font-size: 1.2rem;
             margin-right: 8px;
         }
@@ -259,9 +184,9 @@
         .disclaimer {
             background: #222;
             border-radius: 12px;
-            padding: 25px;
-            margin-top: 50px;
-            border-left: 4px solid #ff4757;
+            padding: 20px;
+            margin-top: 30px;
+            border-left: 4px solid #667eea;
         }
 
         .disclaimer-title {
@@ -284,30 +209,34 @@
 
         @media (max-width: 768px) {
             .main-headline {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .phone-mockup {
-                max-width: 280px;
+                max-width: 240px;
             }
             
             .social-proof {
-                gap: 20px;
+                gap: 15px;
             }
             
             .cta-button {
-                padding: 16px 40px;
-                font-size: 1.1rem;
+                padding: 14px 35px;
+                font-size: 1rem;
             }
         }
 
         @media (max-width: 480px) {
             .main-headline {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .container {
-                padding: 15px;
+                padding: 10px;
+            }
+            
+            .phone-mockup {
+                max-width: 200px;
             }
         }
     </style>
@@ -339,22 +268,7 @@
             </div>
 
             <div class="phone-mockup">
-                <div class="phone-frame">
-                    <div class="phone-screen">
-                        <div class="phone-time">2:53</div>
-                        <div class="phone-date">Tuesday, September 19</div>
-                        
-                        <div class="notification">
-                            <div class="notification-icon"></div>
-                            <div class="notification-text">
-                                <strong>$750 PayID Reward Credit $750 PM</strong><br>
-                                Congratulations! You've received $750 in PayID credit for completing deals - start shopping now!
-                            </div>
-                        </div>
-                        
-                        <div class="payid-logo-phone">PayID</div>
-                    </div>
-                </div>
+                <img src="images/phone-screenshot.png" alt="PayID Reward Notification" class="phone-image" />
             </div>
 
             <a href="https://www.rewardsgiant-au.com/?Flow=37761135-A7CD-4904-FA56-47968ED5F6E0950A4835&isPrePop=true&RBC=1&reward=payid750au&o=218163&affsecid=5167633202&subaff1=134431&subaff2=208110&subaff3=259692&subaff4=payid750au-default-39955&DVID=&bckm=1" 
