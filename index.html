@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive $750 PayID Reward for Australian Shoppers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 0 60px;
+        }
+
+        .exclusive-badge {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .main-headline {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .brand-highlight {
+            color: #4ecdc4;
+            background: linear-gradient(45deg, #4ecdc4, #44a08d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sub-text {
+            color: #888;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .process-steps {
+            background: #222;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            background: #ff4757;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .bonus-highlight {
+            color: #4ecdc4;
+            font-weight: 600;
+        }
+
+        .phone-mockup {
+            max-width: 320px;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .phone-frame {
+            background: #000;
+            border-radius: 25px;
+            padding: 20px 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+
+        .phone-screen {
+            background: linear-gradient(135deg, #2d3748, #4a5568);
+            border-radius: 20px;
+            padding: 25px 20px;
+            min-height: 580px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phone-time {
+            text-align: center;
+            color: #fff;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+
+        .phone-date {
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+
+        .notification {
+            background: #ff4757;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .notification-icon {
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border-radius: 50%;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .notification-text {
+            color: #fff;
+            font-size: 0.85rem;
+            line-height: 1.3;
+            font-weight: 500;
+        }
+
+        .payid-logo-phone {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .cta-button {
+            background: #ff4757;
+            color: white;
+            padding: 18px 60px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            text-transform: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #ff3838;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.4);
+        }
+
+        .cta-text {
+            color: #888;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .proof-item {
+            text-align: center;
+        }
+
+        .proof-icon {
+            color: #ff4757;
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        .proof-number {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .proof-text {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .disclaimer {
+            background: #222;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 50px;
+            border-left: 4px solid #ff4757;
+        }
+
+        .disclaimer-title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .disclaimer p {
+            color: #aaa;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .disclaimer p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-headline {
+                font-size: 2.5rem;
+            }
+            
+            .phone-mockup {
+                max-width: 280px;
+            }
+            
+            .social-proof {
+                gap: 20px;
+            }
+            
+            .cta-button {
+                padding: 16px 40px;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-headline {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="exclusive-badge">Exclusive Rewards for Australian Shoppers - Limited Time</div>
+            
+            <h1 class="main-headline">
+                Exclusive $750 <span class="brand-highlight">PayID</span> Rewards - Limited Time
+            </h1>
+            
+            <p class="sub-text">Complete deals to earn reward points. 1 extra deal can get you up to $100 extra.</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>Click the button below to start.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>Complete deals to earn reward points. <span class="bonus-highlight">1 extra deal can get you up to 100 extra dollars.</span></div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>Claim your PayID reward and start shopping.</div>
+                </div>
+            </div>
+
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="phone-time">2:53</div>
+                        <div class="phone-date">Tuesday, September 19</div>
+                        
+                        <div class="notification">
+                            <div class="notification-icon"></div>
+                            <div class="notification-text">
+                                <strong>$750 PayID Reward Credit $750 PM</strong><br>
+                                Congratulations! You've received $750 in PayID credit for completing deals - start shopping now!
+                            </div>
+                        </div>
+                        
+                        <div class="payid-logo-phone">PayID</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://www.rewardsgiant-au.com/?Flow=37761135-A7CD-4904-FA56-47968ED5F6E0950A4835&isPrePop=true&RBC=1&reward=payid750au&o=218163&affsecid=5167633202&subaff1=134431&subaff2=208110&subaff3=259692&subaff4=payid750au-default-39955&DVID=&bckm=1" 
+               class="cta-button" target="_blank">
+                Claim Your Reward →
+            </a>
+            
+            <div class="cta-text">Next: Complete some deals and receive your PayID credit</div>
+
+            <div class="social-proof">
+                <div class="proof-item">
+                    <div class="proof-number"><span class="proof-icon">👥</span>18,000+ Rewards Claimed</div>
+                    <div class="proof-text">Verified payouts</div>
+                </div>
+                <div class="proof-item">
+                    <div class="proof-number"><span class="proof-icon">⭐</span>4.6★ average rating</div>
+                    <div class="proof-text">Trusted platform</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <div class="disclaimer-title">Important Information:</div>
+            <p><strong>Requirements:</strong> Complete the required number of sponsored partner deals (typically 15-20 tasks) to qualify for your PayID reward.</p>
+            <p><strong>Eligibility:</strong> Available to Australian residents 18+ with a valid PayID-enabled bank account.</p>
+            <p><strong>Processing Time:</strong> PayID rewards are typically processed within 5-7 business days after successful completion and verification.</p>
+            <p><strong>Terms:</strong> Partner deals must be completed according to specific requirements. Some offers may require trial subscriptions - remember to cancel if you don't wish to continue. One reward per household.</p>
+            <p><strong>Disclaimer:</strong> This is a promotional experience and is not affiliated with or endorsed by any specific bank. By proceeding, you agree to receive relevant communications about this reward.</p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll and click tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track CTA clicks
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    console.log('PayID CTA clicked');
+                });
+            });
+
+            // Add subtle animation to notification
+            const notification = document.querySelector('.notification');
+            if (notification) {
+                setTimeout(() => {
+                    notification.style.transform = 'scale(1.02)';
+                    setTimeout(() => {
+                        notification.style.transform = 'scale(1)';
+                    }, 200);
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>
