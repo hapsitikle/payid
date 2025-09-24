@@ -1,331 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive $750 PayID Reward for Australian Shoppers</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #1a1a1a;
-            color: #fff;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 15px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 20px 0 30px;
-        }
-
-        .exclusive-badge {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
-        }
-
-        .main-headline {
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 10px;
-            color: #fff;
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-        }
-
-        .brand-highlight {
-            color: #4ecdc4;
-            background: linear-gradient(45deg, #4ecdc4, #44a08d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 30px rgba(78, 205, 196, 0.6);
-            filter: drop-shadow(0 0 15px rgba(78, 205, 196, 0.4));
-        }
-
-        .sub-text {
-            color: #888;
-            font-size: 1rem;
-            margin-bottom: 25px;
-            font-weight: 400;
-        }
-
-        .process-steps {
-            background: #222;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 25px 0;
-            text-align: left;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            font-size: 1rem;
-            line-height: 1.4;
-        }
-
-        .step:last-child {
-            margin-bottom: 0;
-        }
-
-        .step-number {
-            background: #667eea;
-            color: white;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-
-        .bonus-highlight {
-            color: #4ecdc4;
-            font-weight: 600;
-        }
-
-        .phone-mockup {
-            max-width: 260px;
-            margin: 25px auto;
-            position: relative;
-        }
-
-        .phone-image {
-            width: 100%;
-            height: auto;
-            border-radius: 25px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
-            transition: transform 0.3s ease;
-        }
-
-        .phone-image:hover {
-            transform: scale(1.02);
-        }
-
-        .cta-button {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            padding: 15px 45px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 8px;
-            display: inline-block;
-            margin: 20px 0 10px;
-            transition: all 0.3s ease;
-            text-transform: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .cta-button:hover {
-            background: linear-gradient(45deg, #5a67d8, #6b46c1);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-        }
-
-        .cta-text {
-            color: #888;
-            font-size: 0.9rem;
-            margin-top: 10px;
-        }
-
-        .social-proof {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 25px 0;
-            flex-wrap: wrap;
-        }
-
-        .proof-item {
-            text-align: center;
-        }
-
-        .proof-icon {
-            color: #667eea;
-            font-size: 1.2rem;
-            margin-right: 8px;
-        }
-
-        .proof-number {
-            color: #fff;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .proof-text {
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        .disclaimer {
-            background: #222;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 30px;
-            border-left: 4px solid #667eea;
-        }
-
-        .disclaimer-title {
-            color: #fff;
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .disclaimer p {
-            color: #aaa;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            margin-bottom: 12px;
-        }
-
-        .disclaimer p:last-child {
-            margin-bottom: 0;
-        }
-
-        @media (max-width: 768px) {
-            .main-headline {
-                font-size: 2.2rem;
-            }
-            
-            .phone-mockup {
-                max-width: 240px;
-            }
-            
-            .social-proof {
-                gap: 15px;
-            }
-            
-            .cta-button {
-                padding: 14px 35px;
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .main-headline {
-                font-size: 1.8rem;
-            }
-            
-            .container {
-                padding: 10px;
-            }
-            
-            .phone-mockup {
-                max-width: 200px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$750 Sephora Beauty Voucher</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+    }
+    .container { max-width: 700px; margin: 0 auto; padding: 30px 20px; text-align: center; }
+    
+    /* Header Badge */
+    .header-badge {
+      background: rgba(138, 97, 255, 0.2);
+      border: 1px solid #8a61ff;
+      color: #b8a9ff;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+    
+    /* Main Header */
+    .header h1 { 
+      font-size: 3rem; 
+      font-weight: 900; 
+      color: #fff; 
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+    .header .highlight { color: #4ecdc4; }
+    .header p { 
+      font-size: 1.2rem; 
+      color: #a0a0a0; 
+      margin-bottom: 50px;
+      font-weight: 400;
+    }
+    
+    /* Logo Placeholder */
+    .sephora-logo { margin-bottom: 20px; }
+    .logo-placeholder {
+      width: 160px; height: 50px; margin: 0 auto 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 600; font-size: 12px;
+    }
+    
+    /* Steps */
+    .steps { margin: 50px 0; }
+    .step {
+      display: flex; align-items: center; padding: 20px 0;
+      text-align: left; max-width: 600px; margin: 0 auto 25px;
+    }
+    .step-number {
+      background: #8a61ff;
+      color: #fff;
+      width: 40px; height: 40px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; margin-right: 20px; flex-shrink: 0;
+      font-size: 16px;
+    }
+    .step-content {
+      flex: 1;
+    }
+    .step-content h3 { 
+      font-size: 1.2rem; 
+      font-weight: 600; 
+      color: #fff; 
+      margin-bottom: 5px; 
+    }
+    .step-content p { 
+      color: #a0a0a0; 
+      font-size: 1rem; 
+      line-height: 1.5;
+    }
+    .step-content .highlight { color: #4ecdc4; font-weight: 600; }
+    
+    /* CTA Message */
+    .cta-message {
+      font-size: 1.3rem;
+      color: #4ecdc4;
+      font-weight: 600;
+      margin: 40px 0 30px;
+    }
+    
+    /* CTA Button */
+    .cta-button {
+      background: linear-gradient(135deg, #8a61ff 0%, #6c5ce7 100%);
+      color: #fff;
+      padding: 18px 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 12px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(138, 97, 255, 0.3);
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(138, 97, 255, 0.4);
+      background: linear-gradient(135deg, #9c88ff 0%, #7c6ce8 100%);
+    }
+    .cta-button::after {
+      content: " →";
+      margin-left: 8px;
+    }
+    
+    .cta-subtext {
+      margin-top: 20px;
+      color: #a0a0a0;
+      font-size: 0.95rem;
+    }
+    
+    /* Mobile Proof */
+    .mobile-proof {
+      margin: 50px 0 30px;
+    }
+    .mobile-proof h3 {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .mobile-placeholder {
+      width: 200px; 
+      height: 350px; 
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      color: #a0a0a0; 
+      font-weight: 500;
+      text-align: center; 
+      font-size: 12px;
+      backdrop-filter: blur(10px);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container { padding: 20px 15px; }
+      .header h1 { font-size: 2.2rem; }
+      .header p { font-size: 1.1rem; }
+      .step { 
+        flex-direction: row; 
+        text-align: left; 
+        padding: 15px 0;
+      }
+      .step-number { 
+        width: 35px; 
+        height: 35px; 
+        font-size: 14px;
+        margin-right: 15px;
+      }
+      .cta-button { 
+        padding: 16px 35px; 
+        font-size: 1.1rem; 
+      }
+      .logo-placeholder { 
+        width: 140px; 
+        height: 45px; 
+        font-size: 11px; 
+      }
+      .mobile-placeholder { 
+        width: 160px; 
+        height: 280px; 
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <div class="exclusive-badge">PayID Rewards - Australia Only - Limited Availability</div>
-            
-            <h1 class="main-headline">
-                $750 <span class="brand-highlight">PayID</span> Rewards - Limited Time
-            </h1>
-            
-            <p class="sub-text">Your shopping spree is just a few deals away</p>
-            
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div>Click the button below to start.</div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div>Complete deals to earn reward points. <span class="bonus-highlight">1 extra deal can get you up to 100 extra dollars.</span></div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div>Claim your PayID reward and start shopping.</div>
-                </div>
-            </div>
-
-            <p style="color: #4ecdc4; font-size: 1.1rem; font-weight: 600; margin: 20px 0 15px; text-align: center;">$750 is ready for your bank account next</p>
-
-            <a href="https://uplevelrewarded.com/aff_c?offer_id=2046&aff_id=134431" 
-               class="cta-button" target="_blank">
-                Claim Your Reward →
-            </a>
-            
-            <div class="cta-text">Complete some deals and receive your PayID credit</div>
-
-            <div class="phone-mockup">
-                <img src="images/phone-screenshot.jpg" alt="PayID Reward Notification" class="phone-image" />
-            </div>
-            
-            <div class="cta-text">Complete some deals and receive your PayID credit</div>
-
-            <div class="social-proof">
-                <div class="proof-item">
-                    <div class="proof-number"><span class="proof-icon">👥</span>18,000+ Rewards Claimed</div>
-                    <div class="proof-text">Verified payouts</div>
-                </div>
-                <div class="proof-item">
-                    <div class="proof-number"><span class="proof-icon">⭐</span>4.6★ average rating</div>
-                    <div class="proof-text">Trusted platform</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="disclaimer">
-            <div class="disclaimer-title">Important Information:</div>
-            <p><strong>Requirements:</strong> Complete the required number of sponsored partner deals (typically 15-20 tasks) to qualify for your PayID reward.</p>
-            <p><strong>Eligibility:</strong> Available to Australian residents 18+ with a valid PayID-enabled bank account.</p>
-            <p><strong>Processing Time:</strong> PayID rewards are typically processed within 5-7 business days after successful completion and verification.</p>
-            <p><strong>Terms:</strong> Partner deals must be completed according to specific requirements. Some offers may require trial subscriptions - remember to cancel if you don't wish to continue. One reward per household.</p>
-            <p><strong>Disclaimer:</strong> This is a promotional experience and is not affiliated with or endorsed by any specific bank. By proceeding, you agree to receive relevant communications about this reward.</p>
-        </div>
+  <div class="container">
+    <!-- Header Badge -->
+    <div class="header-badge">Sephora Rewards - Limited Availability</div>
+    
+    <!-- Logo -->
+    <img src="sephora.jpg" alt="Sephora" style="max-width: 160px; height: auto;" />
+    
+    <!-- Main Header -->
+    <div class="header">
+      <h1>$750 <span class="highlight">Sephora</span> Rewards - Limited Time</h1>
+      <p>Your sephora haul is just a few deals away</p>
     </div>
-
-    <script>
-        // Smooth scroll and click tracking
-        document.addEventListener('DOMContentLoaded', function() {
-            // Track CTA clicks
-            document.querySelectorAll('.cta-button').forEach(button => {
-                button.addEventListener('click', function() {
-                    console.log('PayID CTA clicked');
-                });
-            });
-
-            // Add subtle animation to notification
-            const notification = document.querySelector('.notification');
-            if (notification) {
-                setTimeout(() => {
-                    notification.style.transform = 'scale(1.02)';
-                    setTimeout(() => {
-                        notification.style.transform = 'scale(1)';
-                    }, 200);
-                }, 2000);
-            }
-        });
-    </script>
+    
+    <!-- Steps -->
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Click the button below to start.</h3>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Complete 5 deals.</h3>
+          <p><span class="highlight">1 extra deal can get you up to 100 extra dollars.</span></p>
+        </div>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Claim your Sephora voucher and start shopping.</h3>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA Message -->
+    <div class="cta-message">$750 is ready for your bank account next</div>
+    
+    <!-- CTA Button -->
+    <a href="https://uplevelrewarded.com/aff_c?offer_id=110&aff_id=147318"
+       class="cta-button" target="_blank" rel="noopener noreferrer">
+      Claim Your Reward
+    </a>
+    
+    <div class="cta-subtext">Complete and receive your Sephora credit</div>
+    
+    <!-- Mobile Proof -->
+    <img src="screenshot.png" alt="Sephora reward notification" style="max-width: 200px; height: auto; border-radius: 20px;" />
+  </div>
 </body>
 </html>
